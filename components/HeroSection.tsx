@@ -26,11 +26,11 @@ const HeroSection = () => {
       }}
     >
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
+        <h1 className="text-4xl md:text-7xl font-bold text-gray-900 leading-tight mb-4">
           Empowering Businesses
           <br /> to Innovate with <span className="text-[#AB5DFF]">AI</span>
         </h1>
-        <p className="text-base md:text-lg text-[#828282] mb-10 max-w-3xl mx-auto">
+        <p className="text-sm md:text-lg text-[#828282] mb-10 max-w-3xl mx-auto">
           Master the power of Artificial Intelligence to transform your business —
           through hands-on implementation, consulting, and research-driven
           solutions.
@@ -54,9 +54,9 @@ const HeroSection = () => {
         </div>
 
         <div className="relative flex flex-col items-center justify-center">
-          <div className="flex items-center gap-2 md:gap-3 bg-white/80 backdrop-blur-md pl-2 md:px-4 md:py-2 rounded-full shadow-md mb-6 md:hidden">
+          <div className="flex items-center gap-2 md:gap-3 pl-2 md:px-4 md:py-2 rounded-full mb-6 md:hidden">
             <p className="font-semibold text-gray-800 text-[6px] sm:text-sm leading-snug">
-              JOIN OVER 10,000 <br /> PROFESSIONALS
+              JOIN OVER 10,000<br/>PROFESSIONALS
             </p>
             <div className="flex -space-x-2 bg-[#C7C7C7] rounded-full p-1 px-2">
               {[1, 2, 3, 4].map((num) => (
@@ -77,27 +77,29 @@ const HeroSection = () => {
           </div>
 
           <div className="relative flex flex-col items-center justify-center overflow-hidden mt-2 md:mt-16">
-            <div className="relative w-full flex justify-center overflow-hidden h-[340px] sm:h-[400px] md:h-[620px]">
-              <div className="w-[200px] sm:w-[280px] md:w-[350px]">
-                <Iphone videoSrc="https://videos.pexels.com/video-files/8946986/8946986-uhd_1440_2732_25fps.mp4" />
-              </div>
-            </div>
+  {/* iPhone Container */}
+  <div className="relative w-full flex justify-center overflow-hidden h-[70vw] md:h-[50vw] max-h-[620px]">
+    <div className="w-[50vw] md:w-[30vw] max-w-[380px]">
+      <Iphone videoSrc="https://videos.pexels.com/video-files/8946986/8946986-uhd_1440_2732_25fps.mp4" />
+    </div>
+  </div>
 
-            <div className="relative z-20 flex justify-center w-full -mt-6 md:-mt-10">
-              <div className="w-[250px] sm:w-[320px] md:w-[450px] bg-white text-gray-800 font-medium shadow-lg p-3 sm:p-4 rounded-2xl border border-[#B4B4B4]">
-                <div className="bg-[#E5E5E5] text-[#000000] text-xs sm:text-sm md:text-base p-3 rounded-2xl text-center leading-snug">
-                  Create a Social Media Plan <br className="block sm:hidden" /> for
-                  my Company
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Floating Card */}
+  <div className="relative z-20 flex justify-center w-full -mt-[5vw] md:-mt-[2vw]">
+    <div className="w-[60vw] md:w-[40vw] max-w-[450px] bg-white text-gray-800 font-medium shadow-lg p-[1vw] rounded-2xl border border-[#B4B4B4]">
+      <div className=" bg-[#E5E5E5] text-[#000000] text-[2vw] sm:text-sm md:text-base p-[1.5vw] rounded-2xl text-center leading-snug">
+        Create a Social Media Plan  for my Company
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 
       
-      <div className="hidden md:flex absolute bottom-6 left-6 items-center gap-3 px-4 py-2 rounded-full ">
-        <p className="font-semibold text-gray-800 text-xs sm:text-sm whitespace-nowrap">
+      <div className="hidden xl:flex absolute bottom-6 left-6 items-center gap-3 px-4 py-2 rounded-full ">
+        <p className="font-semibold text-gray-800 text-sm whitespace-nowrap">
           JOIN OVER 10,000 PROFESSIONALS
         </p>
         <div className="flex -space-x-2 bg-[#C7C7C7] rounded-full p-1 px-2">

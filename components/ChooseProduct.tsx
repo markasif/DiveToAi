@@ -29,7 +29,7 @@ export default function AiJourney() {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-10 lg:px-20 text-center bg-white">
+    <section className="py-8 px-4 md:px-10 lg:px-20 text-center bg-white">
 
         <SectionHeader
         eyebrow="Let's Understand"
