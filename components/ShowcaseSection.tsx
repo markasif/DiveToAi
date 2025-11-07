@@ -2,7 +2,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import GridItem from "./LabCard";
-import { Button } from "./ui/button";
+import { VioletButton } from "./ui/violetButton";
 
 export default function LabsSection() {
 
@@ -81,7 +81,7 @@ export default function LabsSection() {
           {/* <button className="px-4 py-4 md:px-6 md:py-4 bg-[#AB5DFF] hover:opacity-90 text-white font-medium rounded-full shadow-md transition-all duration-300">
             Collaborate with DiveTo.AI Labs
           </button> */}
-          <Button>Collaborate with DiveTo.AI Labs</Button>
+          <VioletButton>Collaborate with DiveTo.AI Labs</VioletButton>
         </div>
       </div>
     </section>

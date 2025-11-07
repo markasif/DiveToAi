@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Iphone } from "./ui/iphone";
-import { Button } from "./ui/button";
+import { VioletButton } from "./ui/violetButton";
 
 const HeroSection = () => {
   return (
@@ -39,7 +39,7 @@ const HeroSection = () => {
           >
             Book Your AI Strategy Call
           </Link> */}
-          <Button>Book Your AI Strategy Call</Button>
+          <VioletButton>Book Your AI Strategy Call</VioletButton>
 
           <button
             className="bg-white border border-[#AB5DFF] text-[#AB5DFF] px-2 py-2 md:px-8 md:py-3 rounded-full hover:bg-purple-50 transition-colors shadow-md text-center"

@@ -1,5 +1,5 @@
 import SectionHeader from "./SectionHeader";
-import { Button } from "./ui/button";
+import { VioletButton } from "./ui/violetButton";
 
 export default function AiJourney() {
   const cards = [
@@ -68,7 +68,7 @@ export default function AiJourney() {
               {/* <button className="mt-4 bg-[#AB5DFF] text-white px-2 py-2 md:px-8 md:py-3 rounded-full hover:bg-purple-700 transition-colors shadow-md text-center">
                 {card.button}
               </button> */}
-              <Button className="mt-2">{card.button}</Button>
+              <VioletButton className="mt-2">{card.button}</VioletButton>
             </div>
           </div>
         ))}
