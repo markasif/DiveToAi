@@ -4,7 +4,7 @@ import { challengeSteps } from "@/data/learnPageData";
 
 export default function WhyThisChallenge() {
   return (
-    <section className="w-full bg-white  px-4 md:px-8 lg:px-4 xl:px-16">
+    <section className="w-full bg-white  px-4 md:px-8 lg:px-4 xl:px-16 pt-10">
     <div className="max-w-6xl mx-auto text-center mb-4">
       <SectionHeader
         eyebrow="Let’s Understand"

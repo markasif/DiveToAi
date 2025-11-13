@@ -13,8 +13,6 @@ export default function LearnTimelineSection() {
         >
           What <span className="text-[#AB5DFF]">You'll Learn</span> — Step-by-Step
         </SectionHeader>
-
-        {/* Timeline Component */}
         <div className="mt-12">
           <LearnTimeline steps={steps} />
         </div>

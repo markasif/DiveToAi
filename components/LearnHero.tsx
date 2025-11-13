@@ -11,20 +11,20 @@ export default function LearnHero() {
         overflow-hidden 
         rounded-[40px] 
         border border-[#C4C4C4] 
-        min-h-screen
+        min-h-screen xl:min-h-[850px]
         flex items-center justify-center
       "
     >
   
       <Image
-        src="/HeroLearn.png"
+        src="/HeroLearn.jpg"
         alt="Learn AI Hero"
         fill
         priority
         className="
           object-cover
           object-[50%_25%]          
-          md:object-[40%_15%]       
+          md:object-[62%_50%]       
           lg:object-[40%_40%]     
           xl:object-[45%_5%]
         "
@@ -35,13 +35,13 @@ export default function LearnHero() {
           relative z-10 text-center text-white 
           px-4 sm:px-6 
           max-w-5xl mx-auto
-          mt-[10vh] md:mt-[8vh] lg:mt-[16vh]
+          mt-[2vh] md:mt-[8vh] lg:mt-[32vh] xl:mt-[18vw]
         "
       >
         <h1
           className="
             font-cal
-            text-[36px] md:text-[52px] lg:text-[62px] xl:text-[72px]
+            text-[43px] md:text-[50px] lg:text-[60px] xl:text-[72px]
             leading-tight
           "
         >
@@ -50,9 +50,8 @@ export default function LearnHero() {
 
         <p
           className="
-            text-white/90
-            mt-2 md:mt-4
-            text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px]
+            text-white
+            text-[14px] md:text-[17px] lg:text-[18px] xl:text-[24px]
             font-sans leading-snug
           "
         >
@@ -65,13 +64,13 @@ export default function LearnHero() {
             mt-6 sm:mt-8 
             px-4 py-2 
             sm:px-6 sm:py-3 
-            md:px-10 md:py-4 
-            text-[13px] md:text-[16px] lg:text-[18px] xl:text-[22px]
+            md:px-6 md:py-4 
+            text-[14px] md:text-[16px] lg:text-[18px] xl:text-[22px]
           "
         >
           Join Now for{" "}
-          <span className="line-through ml-1 opacity-80">₹24,999</span>
-          <span className="ml-2 font-bold">₹1,999 ➜</span>
+          <span className="line-through ml-1 opacity-60">₹24,999</span>
+          <span className="ml-2">₹1,999 ➜</span>
         </VioletButton>
       </div>
     </section>
