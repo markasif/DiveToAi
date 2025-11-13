@@ -21,13 +21,13 @@ export const programHighlights = [
 
 
 export const steps = [
-  { days: "1–2 days", title: "Discovery", text: "Validate your idea & audience" },
-  { days: "3–4 days", title: "Brand Design", text: "Logo + color palette + Canva kit" },
-  { days: "5–6 days", title: "Market Research", text: "AI competitor & audience insights" },
-  { days: "7–9 days", title: "MVP / Web App", text: "Build with Framer / Notion AI" },
-  { days: "10–11 days", title: "AI Marketing", text: "Content + visuals using AI" },
-  { days: "12–13 days", title: "Social Launch", text: "Automate posts & scheduling" },
-  { days: "14–15 days", title: "Demo & Feedback", text: "Present & get certified" },
+  { days: "1–2 days", title: "Discovery", text: "Validate your idea & define your audience" },
+  { days: "3–4 days", title: "Brand Design", text: "Logo, tagline & color palette with Canva + Looka" },
+  { days: "5–6 days", title: "Market Research", text: "Competitor & audience insights using AI tools" },
+  { days: "7–9 days", title: "MVP / Web App", text: "Build with Framer, Glide, or Notion AI" },
+  { days: "10–11 days", title: "AI Marketing", text: "Create ad copy & visuals using Jasper + Midjourney" },
+  { days: "12–13 days", title: "Social Launch", text: "Automate posts & scheduling with AI" },
+  { days: "14–15 days", title: "Demo & Feedback", text: "Present to mentors & get certified" },
 ];
 
 
@@ -52,4 +52,28 @@ export const expertiseData = [
     image: "/Image/People/people4.jpg",
     color: "bg-[#AB4BFFB2]",
   },
-]
+];
+
+  export const toolsData = [
+  { icon: "/Image/Icon/ChatGPT.svg", title: "ChatGPT", subtitle: "Chatbots" },
+  { icon: "/Image/Icon/claude-ai.svg", title: "Claude", subtitle: "Chatbots" },
+  { icon: "/Image/Icon/Bing.svg", title: "Bing Chat", subtitle: "Chatbots" },
+
+  { icon: "/Image/Icon/jasper.svg", title: "Jasper", subtitle: "Content" },
+
+  { icon: "/Image/Icon/firefiles.svg", title: "Fireflies", subtitle: "Meetings" },
+  
+
+  { icon: "/Image/Icon/descript.svg", title: "Descript", subtitle: "Audio" },
+
+  { icon: "/Image/Icon/midjourney.svg", title: "Midjourney", subtitle: "Images" },
+
+
+  { icon: "/Image/Icon/deepseek.svg", title: "DeepSeek", subtitle: "Chatbots" },
+
+  { icon: "/Image/Icon/Grok.svg", title: "Grok", subtitle: "Chatbots" },
+  { icon: "/Image/Icon/NovelAI.svg", title: "Novel", subtitle: "Imgae Generator" },
+
+];
+
+  

@@ -1,35 +1,57 @@
 "use client";
 import SectionHeader from "./SectionHeader";
-import { useTimelineScroll } from "@/hooks/useTimelineScroll";
+import { useTimelineScroll } from "@/hooks/useTimelineScroll"; // Adjust this import path
 
 export default function HowItWorks() {
   const steps = [
-    { title: "Discovery", text: "Define your goals and identify AI opportunities.", side: "right" },
-    { title: "Implementation", text: "Deploy tools, systems, and automation tailored to your business.", side: "left" },
-    { title: "Training", text: "Upskill your team with AI tools.", side: "right" },
-    { title: "Optimization", text: "Continuous improvement & results.", side: "left" },
+    {
+      title: "Discovery",
+      text: "Define your goals and identify AI opportunities.",
+      side: "right",
+    },
+    {
+      title: "Implementation",
+      text: "Deploy tools, systems, and automation tailored to your business.",
+      side: "left",
+    },
+    {
+      title: "Training",
+      text: "Upskill your team with AI literacy and hands-on tools.",
+      side: "right",
+    },
+    {
+      title: "Optimization",
+      text: "Measure performance and continuously improve results.",
+      side: "left",
+    },
   ];
 
-  const { activeStep, dotPositions, containerRef, dotRefs } = useTimelineScroll(steps.length);
+  const { activeStep, dotPositions, containerRef, dotRefs } = useTimelineScroll(
+    steps.length
+  );
 
   return (
     <section className="bg-white relative overflow-hidden">
       <SectionHeader
         eyebrow="Let's Understand"
-        description="Thousands of organizations trust DiveTo.AI to implement AI solutions."
+        description="Thousands of organizations trust DiveTo.AI to implement AI solutions.
+        Get the expertise, tools, and confidence to transform your business."
       >
         How <span className="text-purple-500">DiveTo.AI</span> works
       </SectionHeader>
 
-      <div ref={containerRef} className="relative mt-24 max-w-4xl mx-auto px-0.5 md:px-8 xl:px-0">
+      <div
+        ref={containerRef} 
+        className="relative mt-24 max-w-4xl mx-auto px-0.5 md:px-8 xl:px-0"
+      >
         <div className="absolute left-[22px] md:left-1/2 transform md:-translate-x-1/2 top-[-60px] bottom-[-60px] w-[3px] bg-linear-to-b from-transparent via-[#DCBAFF] to-transparent" />
-
+        
         {dotPositions.length > 0 && (
           <div
-            className="absolute left-1.5 md:left-1/2 transform md:-translate-x-1/2 -translate-y-2 md:-translate-y-4 transition-all duration-500 z-10"
-            style={{ top: `${dotPositions[activeStep]}px` }}
+            className="absolute left-1.5 md:left-1/2 transform md:-translate-x-1/2 -translate-y-2 md:-translate-y-4 transition-all duration-500 ease-in-out z-10"
+            style={{ top: `${dotPositions[activeStep]}px` }} // `dotPositions` and `activeStep` come from the hook
           >
-            <span className="block w-8 h-8 md:w-12 md:h-12 bg-[#AB5DFF66] rounded-full opacity-60"></span>
+            <span className="block w-8 h-8 md:w-12 md:h-12 ml-0.5 md:ml-0 bg-[#AB5DFF66] rounded-full opacity-60"></span>
           </div>
         )}
 
@@ -37,22 +59,32 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`flex flex-row-reverse items-start gap-4 md:flex-row md:justify-between ${
+              className={`flex flex-row-reverse items-start gap-4 pl-4 md:pl-0 md:flex-row md:items-center md:justify-between md:gap-0 ${
                 step.side === "right" ? "md:flex-row-reverse" : ""
               }`}
             >
-              <div className={`w-full md:w-5/12 text-${step.side === "left" ? "right" : "left"}`}>
-                <h3 className={`text-xl md:text-2xl font-semibold ${
-                    activeStep === index ? "text-purple-600" : "text-[#17171C]"
-                  }`}>
+              <div
+                className={`w-full md:w-5/12 text-left md:text-${
+                  step.side === "left" ? "right" : "left"
+                } leading-snug`}
+              >
+                <h3
+                  className={`text-xl md:text-2xl font-semibold ${
+                    activeStep === index 
+                      ? "text-purple-600"
+                      : "text-[#17171C]"
+                  }`}
+                >
                   {step.title}
                 </h3>
-                <p className="mt-1 text-[#71717A] text-sm md:text-base">{step.text}</p>
+                <p className="text-[#71717A] mt-1 md:mt-2 text-[14px] md:text-base leading-tight">
+                  {step.text}
+                </p>
               </div>
 
               <div
-                ref={(el:any) => (dotRefs.current[index] = el)}
-                className="w-4 h-4 bg-[#AB5DFF] rounded-full"
+                ref={(el:any) => (dotRefs.current[index] = el)} 
+                className="relative z-10 flex items-center justify-center w-3.5 h-3.5 md:w-4 md:h-4 rounded-full bg-[#AB5DFF]"
               />
 
               <div className="hidden md:block w-5/12"></div>
