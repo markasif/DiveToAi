@@ -30,7 +30,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-cal text-gray-900 mb-2 mt-12 md:mt-24">
           Empowering Businesses
           <br />
-          to Innovate with <span className="text-[#AB5DFF]">AI</span>
+          to Innovate with AI
         </h1>
 
         <p className="text-sm md:text-xl font-sans text-[#828282] mb-3 max-w-3xl mx-auto">
